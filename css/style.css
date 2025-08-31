@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kaushan Script", cursive;
+  list-style: none;
+
 }
 body{
    background-color: #ece5ce;
@@ -55,11 +57,12 @@ nav {
 /* Main */
 
 ul {
-  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .titulo-productos {
-  margin: 7rem;
+  margin: 6rem 0 3rem 0;
   color: #774f38;
 }
 
