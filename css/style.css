@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+}
+body{
+   background-color: #ece5ce;
+}
+/* Header */
+
+header {
+  height: 300px;
+  position: relative;
+}
+
+.header-img {
+  background-image: url('../img/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-titulo {
+  font-size: 2.5em;
+  color: #774f38;
+  background-color: rgba(229, 221, 196, 0.75);
+  /* fondo claro semitransparente */
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-weight: 600;
+}
+
+/* Nav */
+nav {
+  background-color: #c5e0dc;
+}
+
+.nav-link {
+  color: #774f38;
+  font-weight: bold;
+  font-size: 1.7em;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e08e79;
+}
+
+
+/* Main */
+
+ul {
+  list-style: none;
+}
+
+.titulo-productos {
+  margin: 7rem;
+  color: #774f38;
+}
+
+.seccion-productos li {
+  background-color: #f1d4af;
+}
+
+.card-productos{
+  width: 20em;
+  height: 20em;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 6px #774f3888;
+}
+.productos-img {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+button {
+  background-color: #e08e79;
+  color: #c5e0dc;
+  border-color: #c5e0dc;
+  border-radius: 0.8em;
+  height: 2.5em;
+  width: 6em;
+}
+
+/* Footer */
+footer {
+  background-color: #774f38;
+  /* color: #c5e0dc; */
+  padding: 0.5em;
+}
+
+.redes {
+  width: 4rem;
+  height: 4rem;
+}
