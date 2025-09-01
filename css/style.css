@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Kaushan Script", cursive;
   list-style: none;
+  color: #774f38;
 
 }
 
@@ -31,7 +32,6 @@ header {
 
 .header-titulo {
   font-size: 2.5em;
-  color: #774f38;
   background-color: rgba(229, 221, 196, 0.75);
   /* fondo claro semitransparente */
   padding: 0.5em 1em;
@@ -64,7 +64,6 @@ ul {
 
 .titulo-productos-index {
   margin: 6rem 0 3rem 0;
-  color: #774f38;
 }
 
 .seccion-productos li {
@@ -101,8 +100,11 @@ ul {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.438);
   border-radius: 1em;
+  padding: 2rem;
 
 }
+
+/* Pages Button */
 
 button {
   background-color: #e08e79;
@@ -116,10 +118,15 @@ button {
 /* Contacto Formulario */
 
 .contacto-formulario {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 /* Nosotros */
+
+.nosotros-titulo{
+  font-size: 2rem;
+  font-weight: bold;
+}
 .nosotros-texto{
   padding: 0 3rem 0 3rem;
   font-size: 1.5rem;
@@ -134,7 +141,6 @@ button {
 
 .titulo-productos{
   text-align: center;
-  color: #774f38;
   margin: 1em 0;
   font-weight: bold;
 }
@@ -153,7 +159,6 @@ button {
   text-align: center;
   font-weight: 500;
   font-size: 1.3rem;
-  color: #774f38;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
