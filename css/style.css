@@ -102,7 +102,8 @@ button {
 
 /* Nosotros */
 .nosotros-texto{
-  padding: 0 2rem 0 2rem;
+  padding: 0 3rem 0 3rem;
+  font-size: 1.5rem;
 }
 .img-carrusel{
   width: 30rem;
@@ -110,11 +111,43 @@ button {
   object-fit: contain;
 }
 
+/* Frutos Secos */
+
+.titulo-productos{
+  text-align: center;
+  color: #774f38;
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+.lista-productos{
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.lista-productos li{
+  background-color: #f1d4af;
+  margin: 0.5em 0;
+  padding: 0.8em;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #774f38;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
 /* Footer */
 footer {
   background-color: #774f38;
-  /* color: #c5e0dc; */
-  padding: 0.5em;
+  color: #c5e0dc;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+footer p{
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .redes {
