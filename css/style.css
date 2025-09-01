@@ -100,6 +100,16 @@ button {
   padding: 1rem;
 }
 
+/* Nosotros */
+.nosotros-texto{
+  padding: 0 2rem 0 2rem;
+}
+.img-carrusel{
+  width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+}
+
 /* Footer */
 footer {
   background-color: #774f38;
