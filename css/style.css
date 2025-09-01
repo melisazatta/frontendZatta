@@ -7,9 +7,11 @@
   list-style: none;
 
 }
-body{
-   background-color: #ece5ce;
+
+body {
+  background-color: #ece5ce;
 }
+
 /* Header */
 
 header {
@@ -58,7 +60,6 @@ nav {
 
 ul {
   padding: 0;
-  margin: 0;
 }
 
 .titulo-productos {
@@ -70,12 +71,13 @@ ul {
   background-color: #f1d4af;
 }
 
-.card-productos{
+.card-productos {
   width: 20em;
   height: 20em;
   border-radius: 1.2rem;
   box-shadow: 0 4px 6px #774f3888;
 }
+
 .productos-img {
   width: 15em;
   height: 15em;
@@ -92,6 +94,12 @@ button {
   width: 6em;
 }
 
+/* Contacto Formulario */
+
+.contacto-formulario {
+  padding: 1rem;
+}
+
 /* Footer */
 footer {
   background-color: #774f38;
@@ -102,4 +110,15 @@ footer {
 .redes {
   width: 4rem;
   height: 4rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .contacto-formulario {
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+  .btn{
+    font-size: 1.6rem;
+  }
 }
