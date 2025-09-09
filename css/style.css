@@ -17,7 +17,9 @@ body {
 
 header {
   height: 300px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
 }
 
 .header-img {
@@ -189,3 +191,39 @@ footer p{
     font-size: 1.6rem;
   }
 }
+
+
+/* Efectos */
+
+/* Frutilla */
+.rotate {
+  max-width: 50px;
+  position: relative;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0%   { transform: rotateZ(0deg); }
+  25%  { transform: rotateZ(10deg); }
+  50%  { transform: rotateZ(-10deg); }
+  75%  { transform: rotateZ(10deg); }
+  100% { transform: rotateZ(0deg); }
+}
+
+/* Fondo formulario */
+.contacto-formulario {
+    background: linear-gradient(90deg, #f1d4af, #926145cc);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
+    border-radius: 0.8rem;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
