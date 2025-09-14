@@ -1,0 +1,34 @@
+/* Main */
+
+.seccion-productos ul {
+  padding: 0;
+  @extend %flexCenter;
+}
+
+.titulo-productos-index {
+  margin: 6rem 0 3rem 0;
+}
+
+.seccion-productos li {
+  background-color: #f1d4af;
+}
+
+.card-productos {
+//   width: 20em;
+//   height: 20em;
+  @include widthHeight(20em, 20em);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 6px #774f3888;
+}
+
+.card-productos h3{
+  font-weight: bold;
+}
+
+.productos-img {
+//   width: 15em;
+//   height: 15em;
+  @include widthHeight(15em, 15em);
+  object-fit: cover;
+  border-radius: 1.2rem;
+}

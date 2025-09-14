@@ -3,20 +3,6 @@
   justify-content: center;
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Kaushan Script", cursive;
-  list-style: none;
-  color: #774f38;
-}
-
-body {
-  background-color: #ece5ce;
-}
-
 /* Header */
 header {
   height: 240px;
@@ -42,20 +28,22 @@ header {
   font-weight: 600;
 }
 
-/* Nav */
-nav {
-  background-color: #c5e0dc;
+/* Footer */
+footer {
+  background-color: #774f38;
+  color: #c5e0dc;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.nav-link {
-  color: #774f38;
-  font-weight: bold;
-  font-size: 1.7em;
-  transition: color 0.3s;
+footer p {
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
 }
 
-.nav-link:hover {
-  color: #e08e79;
+.redes {
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Main */
@@ -89,6 +77,22 @@ nav {
   border-radius: 1.2rem;
 }
 
+/* Nav */
+nav {
+  background-color: #c5e0dc;
+}
+
+.nav-link {
+  color: #774f38;
+  font-weight: bold;
+  font-size: 1.7em;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e08e79;
+}
+
 .banner {
   background-image: url("../img/alimentos.avif");
   background-size: cover;
@@ -107,16 +111,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.438);
   border-radius: 1em;
   padding: 2rem;
-}
-
-/* Pages Button */
-button {
-  background-color: #e08e79;
-  color: #c5e0dc;
-  border-color: #c5e0dc;
-  border-radius: 0.8em;
-  width: 6em;
-  height: 2.5em;
 }
 
 /* Contacto Formulario */
@@ -199,24 +193,6 @@ button {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-footer {
-  background-color: #774f38;
-  color: #c5e0dc;
-  padding-top: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-footer p {
-  padding-top: 0.5rem;
-  font-size: 1.3rem;
-}
-
-.redes {
-  width: 4rem;
-  height: 4rem;
-}
-
 @media only screen and (min-width: 900px) {
   .contacto-formulario {
     max-width: 60%;
@@ -233,6 +209,30 @@ footer p {
     padding: 0 7rem 0 7rem;
   }
 }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+  list-style: none;
+  color: #774f38;
+}
+
+body {
+  background-color: #ece5ce;
+}
+
+/* Pages Button */
+button {
+  background-color: #e08e79;
+  color: #c5e0dc;
+  border-color: #c5e0dc;
+  border-radius: 0.8em;
+  width: 6em;
+  height: 2.5em;
+}
+
 /* Efectos */
 /* Frutilla */
 .rotate {

@@ -1,0 +1,15 @@
+/* Nav */
+nav {
+  background-color: $colorCeleste;
+}
+
+.nav-link {
+  color: $colorMarron;
+  font-weight: bold;
+  font-size: 1.7em;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: $colorNaranja;
+}
