@@ -154,7 +154,7 @@ button {
   flex-direction: column;
 }
 .nosotros-texto{
-  padding: 0 7rem 0 7rem;
+  padding: 0 2rem 0 2rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -231,6 +231,10 @@ footer p{
 
   .nosotros-historia{
     margin: 3rem 0 3rem 0;
+  }
+
+  .nosotros-texto{
+    padding: 0 7rem 0 7rem;
   }
 }
 
