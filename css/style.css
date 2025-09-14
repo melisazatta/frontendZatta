@@ -79,6 +79,10 @@ ul {
   box-shadow: 0 4px 6px #774f3888;
 }
 
+.card-productos h3{
+  font-weight: bold;
+}
+
 .productos-img {
   width: 15em;
   height: 15em;
@@ -121,10 +125,16 @@ button {
 
 .seccion-contacto {
   margin-top: 6rem;
+  font-weight: bold;
+}
+
+.seccion-contacto h2{
+  font-weight: bold;
 }
 
 .contacto-formulario {
   padding: 2rem;
+  margin: 2rem;
 }
 
 /* Nosotros */
@@ -137,9 +147,23 @@ button {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.nosotros-historia{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .nosotros-texto{
-  padding: 0 3rem 0 3rem;
+  padding: 0 7rem 0 7rem;
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.trigo{
+  display: block;
+  margin: auto;
+  width: 9rem;
+  height: 6rem;
 }
 .img-carrusel{
   width: 30rem;
@@ -147,7 +171,13 @@ button {
   object-fit: contain;
 }
 
-/* Frutos Secos */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Listado de productos */
 
 .titulo-productos{
   text-align: center;
@@ -167,8 +197,8 @@ button {
   padding: 0.8em;
   border-radius: 0.5em;
   text-align: center;
-  font-weight: 500;
-  font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
@@ -197,6 +227,10 @@ footer p{
   }
   .btn{
     font-size: 1.6rem;
+  }
+
+  .nosotros-historia{
+    margin: 3rem 0 3rem 0;
   }
 }
 
