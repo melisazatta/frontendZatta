@@ -118,6 +118,14 @@ nav {
   color: #e08e79;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #e08e79;
+}
+
+.navbar-toggler {
+  color: #e08e79;
+}
+
 .banner {
   background-image: url("../img/alimentos.avif");
   background-size: cover;
@@ -274,9 +282,10 @@ nav {
   font-weight: bold;
 }
 
-.seccion-recetas h5, .seccion-tips h5 {
+.seccion-recetas h4, .seccion-tips h4 {
   text-align: center;
   font-weight: bold;
+  color: #e08e79;
 }
 
 .seccion-recetas img {
@@ -325,6 +334,10 @@ body {
   border-radius: 0.8em;
   width: 6em;
   height: 2.5em;
+}
+
+a {
+  color: #774f38;
 }
 
 /*# sourceMappingURL=style.css.map */

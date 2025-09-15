@@ -13,3 +13,10 @@ nav {
 .nav-link:hover {
   color: $colorNaranja;
 }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: $colorNaranja;
+}
+.navbar-toggler{
+  color: $colorNaranja;
+}
