@@ -13,3 +13,22 @@
   padding: 2rem;
   margin: 2rem;
 }
+
+// /* Efectos */
+
+/* Fondo formulario */
+.contacto-formulario {
+    background: linear-gradient(90deg, #f1d4af, #926145cc);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
+    border-radius: 0.8rem;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}

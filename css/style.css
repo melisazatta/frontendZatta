@@ -1,4 +1,4 @@
-.banner, .seccion-productos ul, .header-img {
+.recetas, .tips, .banner, .seccion-productos ul, .header-img {
   display: flex;
   justify-content: center;
 }
@@ -28,6 +28,31 @@ header {
   font-weight: 600;
 }
 
+/* Efectos */
+/* Frutilla */
+.rotate {
+  max-width: 50px;
+  position: relative;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  75% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
 /* Footer */
 footer {
   background-color: #774f38;
@@ -128,6 +153,22 @@ nav {
   margin: 2rem;
 }
 
+/* Fondo formulario */
+.contacto-formulario {
+  background: linear-gradient(90deg, #f1d4af, rgba(146, 97, 69, 0.8));
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite alternate;
+  border-radius: 0.8rem;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 /* Nosotros */
 .seccion-nosotros {
   margin-top: 6rem;
@@ -193,6 +234,59 @@ nav {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.recetas-tips {
+  display: flex;
+  flex-direction: column; /* mobile: uno abajo del otro */
+  gap: 1rem;
+}
+
+.recetas, .tips {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  opacity: 0.8;
+  box-shadow: 0 4px 6px rgba(119, 79, 56, 0.5333333333);
+  align-items: center;
+}
+
+.recetas {
+  background-image: url("../img/recetas.png");
+}
+
+.tips {
+  background-image: url("../img/tips.png");
+}
+
+.recetas-tips a {
+  text-decoration: none;
+}
+
+.tips-recetas-titulo {
+  margin: 6rem 0 3rem 0;
+}
+
+.tips-recetas-texto {
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.seccion-recetas h5, .seccion-tips h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.seccion-recetas img {
+  width: 100%;
+  height: auto;
+  min-height: 20rem;
+  max-height: 20rem;
+  object-fit: cover;
+}
+
 @media only screen and (min-width: 900px) {
   .contacto-formulario {
     max-width: 60%;
@@ -224,55 +318,13 @@ body {
 }
 
 /* Pages Button */
-button {
+.btn {
   background-color: #e08e79;
   color: #c5e0dc;
   border-color: #c5e0dc;
   border-radius: 0.8em;
   width: 6em;
   height: 2.5em;
-}
-
-/* Efectos */
-/* Frutilla */
-.rotate {
-  max-width: 50px;
-  position: relative;
-  animation: shake 1s infinite;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  25% {
-    transform: rotateZ(10deg);
-  }
-  50% {
-    transform: rotateZ(-10deg);
-  }
-  75% {
-    transform: rotateZ(10deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-/* Fondo formulario */
-.contacto-formulario {
-  background: linear-gradient(90deg, #f1d4af, rgba(146, 97, 69, 0.8));
-  background-size: 200% 200%;
-  animation: gradientAnimation 5s infinite alternate;
-  border-radius: 0.8rem;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
