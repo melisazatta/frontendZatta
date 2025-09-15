@@ -43,4 +43,7 @@ body {
   border-radius: 0.8em;
   @include widthHeight(6em, 2.5em);
 }
+a{
+  color: $colorMarron;
+}
 

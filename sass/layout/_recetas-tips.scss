@@ -37,13 +37,15 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
-.seccion-recetas h5, .seccion-tips h5{
+.seccion-recetas h4, .seccion-tips h4{
   text-align: center;
   font-weight: bold;
+  color: $colorNaranja;
 }
 .seccion-recetas img{
- width: 100%;
-  height: auto;
+  @include widthHeight(100%, auto);
+//  width: 100%;
+//   height: auto;
   min-height: 20rem;
   max-height: 20rem;
   object-fit: cover;
