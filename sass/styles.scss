@@ -1,0 +1,46 @@
+//Imports
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/extends";
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./layout/main";
+@import "./layout/navbar";
+@import "./layout/banner";
+
+@import "./pages/contacto";
+@import "./pages/nosotros";
+@import "./pages/listado-productos";
+@import "./layout/recetas-tips";
+
+@import "./mq/mq";
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+  list-style: none;
+  color: $colorMarron;
+
+}
+
+body {
+  background-color: #ece5ce;
+}
+
+
+/* Pages Button */
+
+.btn{
+  background-color: $colorNaranja;
+  color: $colorCeleste;
+  border-color: $colorCeleste;
+  border-radius: 0.8em;
+  @include widthHeight(6em, 2.5em);
+}
+

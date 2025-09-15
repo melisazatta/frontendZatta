@@ -1,0 +1,16 @@
+/* Footer */
+footer {
+  background-color: $colorMarron;
+  color: $colorCeleste;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+footer p{
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.redes {
+  @include widthHeight(4rem, 4rem);
+}
+

@@ -1,0 +1,37 @@
+/* Nosotros */
+
+.seccion-nosotros{
+  margin-top: 6rem;
+}
+
+.nosotros-titulo{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nosotros-historia{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.nosotros-texto{
+  padding: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.trigo{
+  display: block;
+  margin: auto;
+  @include widthHeight(9em, 6em);
+}
+.img-carrusel{
+  @include widthHeight(30rem, 30rem);
+  object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}

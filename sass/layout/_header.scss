@@ -1,0 +1,43 @@
+/* Header */
+
+header {
+  height: 240px;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+.header-img {
+  background-image: url('../img/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  @extend %flexCenter;
+  align-items: center;
+}
+
+.header-titulo {
+  font-size: 2.5em;
+  background-color: rgba(229, 221, 196, 0.75);
+  /* fondo claro semitransparente */
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-weight: 600;
+}
+
+/* Efectos */
+
+/* Frutilla */
+.rotate {
+  max-width: 50px;
+  position: relative;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0%   { transform: rotateZ(0deg); }
+  25%  { transform: rotateZ(10deg); }
+  50%  { transform: rotateZ(-10deg); }
+  75%  { transform: rotateZ(10deg); }
+  100% { transform: rotateZ(0deg); }
+}
