@@ -344,4 +344,8 @@ a {
   color: #774f38;
 }
 
+.btn:hover {
+  background-color: #c5e0dc;
+}
+
 /*# sourceMappingURL=style.css.map */
