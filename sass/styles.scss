@@ -42,6 +42,7 @@ body {
   border-color: $colorCeleste;
   border-radius: 0.8em;
   @include widthHeight(6em, 2.5em);
+  padding-top: 0.6rem;
 }
 a{
   color: $colorMarron;

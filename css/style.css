@@ -223,6 +223,10 @@ nav {
 }
 
 /* Listado de productos */
+.listados {
+  margin-top: 6rem;
+}
+
 .titulo-productos {
   text-align: center;
   margin: 1em 0;
@@ -338,6 +342,7 @@ body {
   border-radius: 0.8em;
   width: 6em;
   height: 2.5em;
+  padding-top: 0.6rem;
 }
 
 a {
