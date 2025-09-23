@@ -45,6 +45,22 @@ En móviles el contenido se adapta para ocupar todo el ancho de forma legible.
 
 En tablets y desktops el formulario, la navbar y las secciones se ajustan con media queries para mantener una buena experiencia de usuario.
 
+## ⚙️ Compilación Automática de Sass
+
+Para facilitar el desarrollo, puedes configurar Sass para que observe y compile automáticamente tus archivos `.scss` a `.css` cada vez que realices cambios.
+
+### 🔧 Instalación de Sass
+
+Si aún no tienes Sass instalado, puedes hacerlo globalmente utilizando npm:
+
+```bash
+npm install -g sass
+
+
+## 👀 Observando Cambios en Archivos Sass
+
+sass --watch sass/styles.scss:css/style.css
+
 ## 👩‍💻 Autora
 
 Proyecto desarrollado por **Melisa Zatta** como práctica de desarrollo web frontend.
