@@ -1,10 +1,11 @@
 /* Header */
 
 header {
-  height: 240px;
-  position: sticky;
-  top: 0;
-  z-index: 1050;
+  height: 300px;
+  margin-top: 3rem;
+  // position: sticky;
+  // top: 0;
+  // z-index: 1050;
 }
 
 .header-img {
@@ -27,6 +28,10 @@ header {
   padding: 0.5em 1em;
   border-radius: 1em;
   font-weight: 600;
+}
+.header-titulo:hover{
+     transform: scale(1.05);
+
 }
 
 /* Efectos */

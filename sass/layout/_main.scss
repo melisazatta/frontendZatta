@@ -6,6 +6,7 @@
 }
 
 .titulo-productos-index {
+  font-size: 2rem;
   margin: 6rem 0 3rem 0;
 }
 
@@ -17,6 +18,9 @@
   @include widthHeight(20em, 20em);
   border-radius: 1.2rem;
   box-shadow: 0 4px 6px #774f3888;
+}
+.card-productos:hover{
+   transform: scale(1.05);
 }
 
 .card-productos h3{

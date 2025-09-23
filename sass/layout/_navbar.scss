@@ -1,6 +1,26 @@
 /* Nav */
 nav {
   background-color: $colorCeleste;
+  //  position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // z-index: 1050;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+
+}
+.navbar-brand img{
+  height: 40px;
+  width: 40px;
+}
+.navbar-brand:hover{
+  transform: scale(1.1);
 }
 
 .nav-link {

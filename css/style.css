@@ -5,10 +5,8 @@
 
 /* Header */
 header {
-  height: 240px;
-  position: sticky;
-  top: 0;
-  z-index: 1050;
+  height: 300px;
+  margin-top: 3rem;
 }
 
 .header-img {
@@ -30,6 +28,10 @@ header {
   padding: 0.5em 1em;
   border-radius: 1em;
   font-weight: 600;
+}
+
+.header-titulo:hover {
+  transform: scale(1.05);
 }
 
 /* Efectos */
@@ -61,8 +63,7 @@ header {
 footer {
   background-color: #774f38;
   color: #c5e0dc;
-  padding-top: 0.5rem;
-  margin-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 footer p {
@@ -70,9 +71,20 @@ footer p {
   font-size: 1.3rem;
 }
 
+footer a {
+  margin: 0 0.3rem;
+}
+
 .redes {
   width: 4rem;
   height: 4rem;
+  transition: filter 0.3s ease, transform 0.3s ease; /* suaviza el color y el zoom */
+  filter: invert(90%) sepia(20%) saturate(368%) hue-rotate(340deg) brightness(97%) contrast(94%); /* #f1d4af */
+}
+
+.redes:hover {
+  filter: invert(88%) sepia(6%) saturate(478%) hue-rotate(116deg) brightness(93%) contrast(91%); /* #c5e0dc */
+  transform: scale(1.2); /* zoom al 120% */
 }
 
 /* Main */
@@ -81,6 +93,7 @@ footer p {
 }
 
 .titulo-productos-index {
+  font-size: 2rem;
   margin: 6rem 0 3rem 0;
 }
 
@@ -93,6 +106,10 @@ footer p {
   height: 20em;
   border-radius: 1.2rem;
   box-shadow: 0 4px 6px rgba(119, 79, 56, 0.5333333333);
+}
+
+.card-productos:hover {
+  transform: scale(1.05);
 }
 
 .card-productos h3 {
@@ -109,6 +126,23 @@ footer p {
 /* Nav */
 nav {
   background-color: #c5e0dc;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
 }
 
 .nav-link {
@@ -224,7 +258,7 @@ nav {
 
 /* Listado de productos */
 .listados {
-  margin-top: 6rem;
+  margin: 6rem 0 1.5rem 0;
 }
 
 .titulo-productos {
@@ -250,6 +284,10 @@ nav {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.btn {
+  margin-left: 1rem;
+}
+
 .recetas-tips {
   display: flex;
   flex-direction: column; /* mobile: uno abajo del otro */
@@ -265,6 +303,10 @@ nav {
   opacity: 0.8;
   box-shadow: 0 4px 6px rgba(119, 79, 56, 0.5333333333);
   align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .recetas {
@@ -305,6 +347,9 @@ nav {
 }
 
 @media only screen and (min-width: 900px) {
+  .header {
+    margin-top: 4.5rem;
+  }
   .contacto-formulario {
     max-width: 60%;
     margin: 0 auto;

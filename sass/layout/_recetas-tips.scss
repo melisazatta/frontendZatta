@@ -16,7 +16,10 @@
   @extend %flexCenter; 
   align-items: center;
 }
+.card:hover{
+ transform: scale(1.05);
 
+}
 .recetas {
   background-image: url("../img/recetas.png");
 }

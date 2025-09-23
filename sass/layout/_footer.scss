@@ -2,15 +2,28 @@
 footer {
   background-color: $colorMarron;
   color: $colorCeleste;
-  padding-top: 0.5rem;
-  margin-top: 0.5rem;
+  padding-top: 1rem;
+  // margin-top: 0.5rem;
 }
 footer p{
   padding-top: 0.5rem;
   font-size: 1.3rem;
 }
+footer a{
+  margin: 0 0.3rem;
+}
 
 .redes {
   @include widthHeight(4rem, 4rem);
+    transition: filter 0.3s ease, transform 0.3s ease; /* suaviza el color y el zoom */
+
+    filter: invert(90%) sepia(20%) saturate(368%) hue-rotate(340deg) brightness(97%) contrast(94%); /* #f1d4af */
+
+}
+.redes:hover {
+    filter: invert(88%) sepia(6%) saturate(478%) hue-rotate(116deg) brightness(93%) contrast(91%); /* #c5e0dc */
+      transform: scale(1.2); /* zoom al 120% */
+
+
 }
 
