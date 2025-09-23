@@ -53,9 +53,9 @@ Para facilitar el desarrollo, puedes configurar Sass para que observe y compile 
 
 Si aún no tienes Sass instalado, puedes hacerlo globalmente utilizando npm:
 
-```bash
 npm install -g sass
 
+---
 
 ## 👀 Observando Cambios en Archivos Sass
 
