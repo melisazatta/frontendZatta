@@ -59,8 +59,12 @@ npm install -g sass
 
 ## 👀 Observando Cambios en Archivos Sass
 
-sass --watch sass/styles.scss:css/style.css
+sass --watch sass/styles.scss css/style.css
 
 ## 👩‍💻 Autora
 
 Proyecto desarrollado por **Melisa Zatta** como práctica de desarrollo web frontend.
+
+### Link a Vercel
+
+https://frontend-zatta.vercel.app/index.html
