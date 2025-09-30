@@ -24,7 +24,43 @@
   font-weight: bold;
   font-size: 1.5rem;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+
+  /* Animación base */
+  opacity: 0;
+  transform: translateX(3vw);
+  animation: aparecerDerecha 0.8s forwards;
 }
+
+/* Los pares salen de la izquierda */
+.lista-productos li:nth-child(even) {
+  transform: translateX(-10vw);
+  animation: aparecerIzquierda 0.8s forwards;
+}
+
+/* Animación de derecha */
+@keyframes aparecerDerecha {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación de izquierda */
+@keyframes aparecerIzquierda {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación escalonada (delay) */
+.lista-productos li:nth-child(1) { animation-delay: 0.2s; }
+.lista-productos li:nth-child(2) { animation-delay: 0.4s; }
+.lista-productos li:nth-child(3) { animation-delay: 0.6s; }
+.lista-productos li:nth-child(4) { animation-delay: 0.8s; }
+.lista-productos li:nth-child(5) { animation-delay: 1s; }
+
 .btn{
-  margin-left: 1rem;
+  margin-right: 1rem;
+  
 }

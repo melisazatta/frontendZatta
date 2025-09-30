@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .recetas, .tips, .banner, .seccion-productos ul, .header-img {
   display: flex;
   justify-content: center;
@@ -223,6 +224,7 @@ nav {
 .nosotros-titulo {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 .nosotros-historia {
@@ -233,7 +235,7 @@ nav {
 
 .nosotros-texto {
   padding: 0 2rem 0 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -306,10 +308,55 @@ nav {
   font-weight: bold;
   font-size: 1.5rem;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  /* Animación base */
+  opacity: 0;
+  transform: translateX(3vw);
+  animation: aparecerDerecha 0.8s forwards;
+}
+
+/* Los pares salen de la izquierda */
+.lista-productos li:nth-child(even) {
+  transform: translateX(-10vw);
+  animation: aparecerIzquierda 0.8s forwards;
+}
+
+/* Animación de derecha */
+@keyframes aparecerDerecha {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Animación de izquierda */
+@keyframes aparecerIzquierda {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Animación escalonada (delay) */
+.lista-productos li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.lista-productos li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.lista-productos li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.lista-productos li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.lista-productos li:nth-child(5) {
+  animation-delay: 1s;
 }
 
 .btn {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .recetas-tips {
@@ -436,7 +483,7 @@ nav {
   .contacto-formulario {
     max-width: 60%;
     margin: 0 auto;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .btn {
     font-size: 1.6rem;
@@ -446,6 +493,12 @@ nav {
   }
   .nosotros-texto {
     padding: 0 7rem 0 7rem;
+  }
+  .lista-productos li {
+    transform: translateX(30%);
+  }
+  .lista-productos li:nth-child(even) {
+    transform: translateX(-30%);
   }
 }
 /* Reset */
